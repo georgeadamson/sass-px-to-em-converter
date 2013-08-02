@@ -3,8 +3,9 @@ sass-em-converter
 
 Diddy sass helper to generate CSS in EMs when your designers specify pixels
 
-```scss
+SASS:
 
+```scss
   // Helper to convert the designers' px specifications into EMs:
   // Eg: H2 { font-size: em(28px); }
   @function em( $px, $basePx: $baseFontPx ) {
@@ -19,8 +20,17 @@ Diddy sass helper to generate CSS in EMs when your designers specify pixels
   H1 {
       font-size: em(32px);
       SMALL {
-        font-size: em(28px,32px)
+        font-size: em(28px,32px);
       }
   }
+```
 
+Resulting CSS:
+```css
+  H1 {
+      font-size: 2em;
+  }
+  H1 SMALL {
+    font-size: 0.875em;
+  }
 ```
