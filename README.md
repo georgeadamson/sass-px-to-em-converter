@@ -3,8 +3,6 @@ sass-em-converter
 
 Diddy SASS helper to generate CSS in EMs when your designers specify pixels
 
-SCSS:
-
 ```scss
   // Helper to convert the designers' px specifications into EMs:
   // Eg: H2 { font-size: em(28px); }
@@ -15,22 +13,24 @@ SCSS:
   }
 
   $baseFontPx: 16px;
+```
 
-  // Sample usage:
+SCSS sample usage:
+```scss
   H1 {
-      font-size: em(32px);
-      margin: em(10px) em(50px);
-      SMALL {
-        font-size: em(28px,32px);
-      }
+    font-size: em(32px);
+    margin: em(10) em(50);
+    SMALL {
+      font-size: em(28px,32px);
+    }
   }
 ```
 
 Resulting CSS:
 ```css
   H1 {
-      font-size: 2em;
-      margin: 0.7143em 3.5714em;
+    font-size: 2em;
+    margin: 0.7143em 3.5714em;
   }
   H1 SMALL {
     font-size: 0.875em;
