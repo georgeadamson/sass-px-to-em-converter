@@ -19,6 +19,7 @@ SCSS:
   // Sample usage:
   H1 {
       font-size: em(32px);
+      margin: 0 em(50px);
       SMALL {
         font-size: em(28px,32px);
       }
@@ -29,6 +30,7 @@ Resulting CSS:
 ```css
   H1 {
       font-size: 2em;
+      margin: 3.5714em;
   }
   H1 SMALL {
     font-size: 0.875em;
