@@ -1,9 +1,9 @@
 sass-em-converter
 =================
 
-Diddy sass helper to generate CSS in EMs when your designers specify pixels
+Diddy SASS helper to generate CSS in EMs when your designers specify pixels
 
-SASS:
+SCSS:
 
 ```scss
   // Helper to convert the designers' px specifications into EMs:
